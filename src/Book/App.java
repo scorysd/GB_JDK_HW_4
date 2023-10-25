@@ -20,9 +20,10 @@ public class App {
         noteBook.add(employee5);
         noteBook.add(employee6);
         noteBook.add(employee7);
-        System.out.println(noteBook.getByExp(2));
-        System.out.println(noteBook.getByTel("emp2"));
-        System.out.println(noteBook.getById(4));
+//        System.out.println(noteBook.getByExp(2));
+//        System.out.println(noteBook.getByTel("emp2"));
+//        System.out.println(noteBook.getById(4));
+        new GUI(noteBook);
 
 
 

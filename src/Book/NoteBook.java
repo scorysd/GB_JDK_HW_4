@@ -13,10 +13,10 @@ public class NoteBook implements List<Employee> {
     }
 
 
-    public List<Employee> getByExp(int exp) {
+    public List<Employee> getByExp(String exp) {
         List<Employee> res = new ArrayList<>();
         for (Employee employee : employees) {
-            if (employee != null && employee.getWorkingYears() == exp) {
+            if (employee != null && employee.getWorkingYears() == Integer.parseInt(exp)) {
                 res.add(employee);
             }
         }
@@ -33,9 +33,9 @@ public class NoteBook implements List<Employee> {
         return res;
     }
 
-    public Employee getById(int id) {
+    public Employee getById(String id) {
         for (Employee employee : employees) {
-            if (employee != null && employee.getId() == id) {
+            if (employee != null && employee.getId() == Integer.parseInt(id)) {
                 return employee;
             }
         }
